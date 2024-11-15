@@ -1,0 +1,16 @@
+/* Primary selectors (data-test-id based) */
+[data-test-id="ai-search-button"],
+[data-test-id="omnibox-search-form-ai-search"],
+[data-test-id="ai-overview"],
+[data-test-id="search-navigation-ai_search"],
+div[data-test-id="search-navigation-item-ai_search"],
+#search-form-ai-suggestion,
+.suggestion-link--ai-suggestion,
+
+/* Fallback selectors (structural/class based) */
+[class*="ai-search"],
+[class*="ai-overview"],
+[class*="ai-suggestion"],
+a[href*="/ai/"] {
+  display: none !important;
+}

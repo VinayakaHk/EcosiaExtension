@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Ecosia AI Button Blocker",
+  "version": "1.2",
+  "description": "Blocks AI elements on Ecosia",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*.ecosia.org/*"],
+      "css": ["block.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ecosia-ai-blocker@example.com",
+      "strict_min_version": "109.0"
+    }
+  }
+}
